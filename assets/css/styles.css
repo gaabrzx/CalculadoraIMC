@@ -161,4 +161,21 @@ form {
     width: 100%;
     justify-content: center;
   }
+
+  #mainForm {
+    width: 300px;
+  }
+
+  #mainForm h1 {
+    font-size: 1.5rem;
+  }
+
+  #input_field p,
+  #input_field i {
+    font-size: 1rem;
+  }
+
+  #input_field input {
+    font-size: 18px;
+  }
 }
