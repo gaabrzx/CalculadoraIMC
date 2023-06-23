@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #18181b;
+  --form-color: #262626;
+  --main-color: #e62020;
+}
+
+#left {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#right {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  font-size: 2.2rem;
+  position: relative;
+}
+
+#title::after {
+  position: absolute;
+  content: "";
+  background-color: var(--main-color);
+  width: 8rem;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--form-color);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 450px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+}
+
+#input_field {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  padding: 1rem;
+}
+
+#input_field input {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  width: 70%;
+  outline: none;
+  color: #fff;
+}
+
+#input_field p,
+#input_field i {
+  font-size: 1.2rem;
+}
+
+#sub-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+
+#input_box {
+  margin-top: 20px;
+}
+
+#input_box label {
+  color: #eee;
+  font-size: 18px;
+}
+
+#infos {
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.normal {
+  color: #16a34a;
+}
+
+.attention {
+  color: var(--main-color);
+}
+
+#description > p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  #left img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #left img {
+    height: 300px;
+  }
+
+  #right form {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #left {
+    display: none;
+  }
+
+  #right {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <div id="left">
+      <img src="assets/img/person.svg" alt="gymPhoto" />
+    </div>
+    <div id="right">
+      <form id="mainForm">
+        <h1 id="title">Calculadora IMC</h1>
+        <div id="input_box">
+          <label for="weight">Peso em KG</label>
+          <div id="input_field">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input
+              type="text"
+              placeholder="Insira seu peso..."
+              id="weight"
+              required
+            />
+            <p>KG</p>
+          </div>
+        </div>
+        <div id="input_box">
+          <label for="weight">Altura em Metros</label>
+          <div id="input_field">
+            <i class="fa-solid fa-ruler"></i>
+            <input
+              type="text"
+              placeholder="Insira seu peso..."
+              id="height"
+              required
+            />
+            <p>m</p>
+          </div>
+        </div>
+        <input type="submit" id="sub-btn" value="Calcular" />
+
+        <div id="infos" class="hidden">
+          <div class="result">
+            <span id="value" class="attention">00</span>
+            <span>Seu IMC</span>
+          </div>
+          <div id="description">
+            <p></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/bb389d468f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
