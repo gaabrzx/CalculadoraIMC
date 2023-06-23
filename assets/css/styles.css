@@ -162,12 +162,12 @@ form {
     justify-content: center;
   }
 
-  #mainForm {
-    width: 300px;
-  }
-
   #mainForm h1 {
     font-size: 1.5rem;
+  }
+
+  #right form {
+    width: 80%;
   }
 
   #input_field p,
